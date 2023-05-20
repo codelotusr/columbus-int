@@ -141,7 +141,7 @@ std::string reverseString() {
     std::getline(std::cin, tekstas);
     std::string apverstasTekstas;
     // apverciamas tekstas naudojant 'for' cikla
-    for (size_t i(tekstas.length() - 1); i >= 0; --i)
+    for (int i(tekstas.length() - 1); i >= 0; --i)
         // pridedamas esamas simbolis prie apversto teksto kintamojo
         apverstasTekstas += tekstas[i];
     return apverstasTekstas;
