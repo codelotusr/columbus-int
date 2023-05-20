@@ -112,6 +112,10 @@ void menu() {
         enterToContinue();
         menu();
     }
+    case 0: {
+        std::cout << "Programa baigia darba\n";
+        exit(0);
+    }
   }
 }
 
@@ -209,6 +213,7 @@ void printMinAndMax(int A[]) {
 void findDuplicateNumbers(int A[]) {
     // sukuriamas set'as, kuriame bus saugomi pasikartojantys skaiciai (naudojamas unordered_set, nes jis yra greitesnis nei set)
     std::unordered_set<int> nums;
+    std::cout << "Pasikartojantys skaiciai: ";
     for (size_t i{0}; i < 100; ++i) {
         // jeigu esamas skaicius masyve nera set'e, tai jis pridedamas i set'a, jeigu jau yra, tai isvedamas i konsole
         if (nums.find(A[i]) == nums.end())
