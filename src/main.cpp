@@ -131,6 +131,7 @@ void enterToContinue() {
 }
 
 // Uzduotis #1
+
 std::string reverseString() {
     std::string tekstas;
     std::cout << "Iveskite teksta: ";
@@ -161,9 +162,10 @@ int *generateRandomNumberArray() {
     return array;
 }
 
-// Task #2
+// Uzduotis #2
 
 // Uzduotis #2.1
+
 int findMin(int A[]) {
     int min = A[0];
     for (size_t i{0}; i < 100; ++i)
